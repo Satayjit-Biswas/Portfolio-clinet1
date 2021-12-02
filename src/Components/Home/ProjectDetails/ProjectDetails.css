@@ -1,0 +1,11 @@
+.details_box{
+    background-color: rgb(20, 20, 20);
+    padding: 5%;
+}
+.details_box .date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 20px 0;
+}
