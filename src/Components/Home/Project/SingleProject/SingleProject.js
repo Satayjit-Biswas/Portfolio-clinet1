@@ -10,24 +10,24 @@ const SingleProject = (props) => {
         history.push(`/productdetails/${_id}`);
     };
     return (
-        <div class="col-lg-4 col-md-6 logic mb_30">
-            <div class="blog-box">
-                <div class="blog-img">
-                    <img src={img1} alt="img1" class="img-fluid" />
+        <div className="col-lg-4 col-md-6 logic mb_30">
+            <div className="blog-box">
+                <div className="blog-img">
+                    <img src={img1} alt="img1" className="img-fluid" />
                 </div>
-                <div class="blog-details">
-                    <span class="blog-date mr_5">
+                <div className="blog-details">
+                    <span className="blog-date mr_5">
                         <span>Start: {startDate}</span>
                         <span> End: {endDate}</span>
                     </span>
-                    <div class="blog-title">
-                        <h3 class="mt_15 mb_15">
-                            <a href="#">{title}</a>
+                    <div className="blog-title">
+                        <h3 className="mt_15 mb_15">
+                            <a href="#" onClick={HandleProjectDetails}>{title}</a>
                         </h3>
                         <p>{description1.substring(0, 150)}....</p>
-                        <div class="arrow mt_5 text-right">
+                        <div className="arrow mt_5 text-right">
                             <span onClick={HandleProjectDetails}>
-                                <i class="fal fa-long-arrow-right"></i>
+                                <i className="fal fa-long-arrow-right"></i>
                             </span>
                         </div>
                     </div>

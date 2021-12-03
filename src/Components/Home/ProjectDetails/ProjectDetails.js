@@ -38,8 +38,11 @@ const ProjectDetails = () => {
             <div className="container">
                 {loading ? (
                     <div className="d-flex aline-items-center justify-content-center mb_60">
-                        <div class="spinner-border text-warning" role="status">
-                            <span class="sr-only">Loading...</span>
+                        <div
+                            className="spinner-border text-warning"
+                            role="status"
+                        >
+                            <span className="sr-only">Loading...</span>
                         </div>
                     </div>
                 ) : (

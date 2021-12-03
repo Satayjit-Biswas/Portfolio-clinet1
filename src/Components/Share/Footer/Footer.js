@@ -3,32 +3,32 @@ import img from "../../../Assets/logo.png";
 
 const Footer = () => {
     return (
-        <footer class="footer-area">
-            <div class="container">
-                <div class="footer-text text-center">
-                    <div class="footer-img dark-footer-img">
-                        <img src={img} alt="" class="img-fluid" />
+        <footer className="footer-area">
+            <div className="container">
+                <div className="footer-text text-center">
+                    <div className="footer-img dark-footer-img">
+                        <img src={img} alt="" className="img-fluid" />
                     </div>
-                    <div class="footer-icon">
+                    <div className="footer-icon">
                         <a href="#">
-                            <i class="fab fa-facebook-f"></i>
+                            <i className="fab fa-facebook-f"></i>
                         </a>
                         <a href="#">
-                            <i class="fab fa-twitter"></i>
+                            <i className="fab fa-twitter"></i>
                         </a>
                         <a href="#">
-                            <i class="fab fa-whatsapp"></i>
+                            <i className="fab fa-whatsapp"></i>
                         </a>
                         <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i className="fab fa-linkedin-in"></i>
                         </a>
                         <a href="#">
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                     </div>
-                    <p class="mt_25">
+                    <p className="mt_25">
                         Developer by
-                        <span class="f_color">Satayjit Biswas</span>
+                        <span className="f_color">Satayjit Biswas</span>
                     </p>
                 </div>
             </div>

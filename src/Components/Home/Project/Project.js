@@ -15,27 +15,30 @@ const Project = () => {
             });
     }, []);
     return (
-        <div class="project-area" id="project">
-            <div class="container">
-                <div class="project">
-                    <div class="service-text">
-                        <h4 class="text-center">
-                            <span class="text-wrapper">My Project</span>
+        <div className="project-area" id="project">
+            <div className="container">
+                <div className="project">
+                    <div className="service-text">
+                        <h4 className="text-center">
+                            <span className="text-wrapper">My Project</span>
                         </h4>
                     </div>
                     {loading ? (
                         <div className="d-flex aline-items-center justify-content-center mb_60">
                             <div
-                                class="spinner-border text-warning"
+                                className="spinner-border text-warning"
                                 role="status"
                             >
-                                <span class="sr-only">Loading...</span>
+                                <span className="sr-only">Loading...</span>
                             </div>
                         </div>
                     ) : (
-                        <div class="row popup-section mt_40">
+                        <div className="row popup-section mt_40">
                             {project.map((data) => (
-                                <SingleProject project={data}></SingleProject>
+                                <SingleProject
+                                    key={data._id}
+                                    project={data}
+                                ></SingleProject>
                             ))}
                         </div>
                     )}
